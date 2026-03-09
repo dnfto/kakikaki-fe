@@ -1,0 +1,12 @@
+# 모든 파일에 대해 특정 팀/개인이 리뷰하도록 설정
+* @GeumBinLee
+
+# 특정 디렉토리 담당
+lib/core/ @GeumBinLee
+
+# 특정 파일 담당
+lib/main.dart @GeumBinLee
+pubspec.yaml @GeumBinLee
+
+# CI/CD 관련 스크립트 담당
+.github/workflows/ @GeumBinLee

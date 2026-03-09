@@ -1,0 +1,46 @@
+name: Flutter_Test
+
+on:
+  pull_request:
+    branches:
+      - prod
+      - dev
+      - main
+
+jobs:
+  build:
+    name: Running Test and CI
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: 소스 코드 체크아웃
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      # Step 2: Flutter SDK 설치
+      - name: Install Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.1'
+          channel: 'stable'
+
+      # Step 3: Flutter 의존성 캐싱 (flutter pub get 전에 실행)
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-flutter-${{ hashFiles('pubspec.yaml') }}
+
+      # Step 4: GitHub Secrets를 사용하여 .env 파일 생성 (FLAVOR 제거)
+      - name: Create .env file
+        run: |
+          echo "API_KEY=${{ secrets.API_KEY }}" > dev.env
+          echo "DB_URL=${{ secrets.URL }}" >> dev.env
+
+      # Step 5: 프로젝트 초기화 및 코드 생성
+      - name: Initialize Project
+        run: dart run tool/init.dart
+
+      # Step 6: Flutter 테스트 실행
+      - name: Run Flutter Tests
+        run: flutter test --coverage
