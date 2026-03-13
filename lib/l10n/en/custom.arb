@@ -1,0 +1,132 @@
+{
+  "@@locale": "en",
+  "@kanji_error_load_failed": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@kanji_error_no_data": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_guide_subscribe_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_trial_start_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "alert_update_app": "You need to update to the latest version.\nPlease proceed with the update!",
+  "calendar_date_setting": "Setting",
+  "calendar_validation_same_day_content": "The start date must be before the end date.\nDo you want to set the end date to the next day?",
+  "calendar_validation_same_day_title": "The start date and end date must be different.",
+  "custom_default_nickname": "Member",
+  "inquiry_admin_reply": "Admin reply",
+  "inquiry_category": "Category",
+  "inquiry_category_error": "Report error",
+  "inquiry_category_suggestion": "Feature suggestion",
+  "inquiry_content": "Content",
+  "inquiry_content_hint": "Enter your inquiry",
+  "inquiry_content_required": "Please enter content",
+  "inquiry_list_empty": "You have no inquiries yet.",
+  "inquiry_list_new_button": "New inquiry",
+  "inquiry_login_required": "Please sign in to use this feature.",
+  "inquiry_status_answered": "Answered",
+  "inquiry_status_pending": "Pending",
+  "inquiry_status_processing": "Processing",
+  "inquiry_submit": "Submit",
+  "inquiry_title_hint": "Enter title",
+  "inquiry_title_optional": "Title (optional)",
+  "inquiry_toast_thanks": "Thank you! We'll look into it soon.",
+  "kanji_error_load_failed": "Failed to load stroke order data.\n({kanji})",
+  "kanji_error_no_data": "No data found in the DB for this kanji ({kanji}).",
+  "my_page_alarm_toggle": "Notifications On/Off",
+  "my_page_alarm_tooltip": "Turn feedback-ready notifications and\nthe daily writing reminder(11 PM) on or off.",
+  "my_page_calendar_settings": "Calendar Settings",
+  "my_page_diary_feed": "My diary feed",
+  "my_page_inquiry": "Inquiry / Report issue",
+  "my_page_language_settings": "Language Settings",
+  "my_page_logout": "Logout",
+  "my_page_logout_confirm": "Are you sure you want to log out?",
+  "my_page_my_feed": "My Feed",
+  "my_page_notification_disable_content": "Please turn off notification permission in Settings.\nYou won't receive notifications when feedback is ready.",
+  "my_page_notification_disable_title": "Turn off notifications",
+  "my_page_notification_enable_permission_content": "Allow notification permission in Settings to receive feedback-ready notifications.\nYou can also get the daily writing reminder at 11 PM.",
+  "my_page_notification_enable_permission_title": "Notification permission",
+  "my_page_notification_permission_go_to_settings": "Go to settings",
+  "my_page_notification_permission_required_content": "To turn on notifications, please allow notification permission.\nMove to settings?",
+  "my_page_notification_permission_required_title": "Notification permission required",
+  "my_page_open_source_license": "Open source licenses",
+  "my_page_privacy_policy": "Privacy Policy and Terms of Service",
+  "my_page_theme_settings": "Theme settings",
+  "my_page_title": "My Page",
+  "my_page_version_info": "Version Info",
+  "my_page_withdrawal": "Withdraw account",
+  "my_toast_nickname_changed": "Nickname has been updated.",
+  "nights_days": "{nights} nights {days} days",
+  "open_source_cc_description": "This license includes the following conditions:\n• Attribution: You must credit the original author.\n• ShareAlike: Derivative works must use the same license.",
+  "open_source_kanji_source": "Kanji stroke data source",
+  "open_source_kanjivg_description": "The kanji stroke data in this application is based on Ulrich Apel's KanjiVG project and is distributed under the Creative Commons Attribution-Share Alike 3.0 license.",
+  "open_source_license_info": "License information",
+  "open_source_license_title": "Open source licenses",
+  "premium_guide_go_to_pay": "payment",
+  "premium_guide_subscribe_content": "{message}\nSubscribe to Premium and enjoy unlimited access!",
+  "premium_guide_title": "Premium",
+  "premium_payment_coming_soon_content": "You’ve already used the free trial with this email.\nWe’re preparing the official payment system—please check back soon.",
+  "premium_payment_coming_soon_title": "Premium payment coming soon 🚀",
+  "premium_trial_later_button": "Maybe later",
+  "premium_trial_start_button": "Start free trial",
+  "premium_trial_start_content": "{message}\nEnjoy all features without limits with a free trial. No automatic payment!",
+  "premium_trial_start_error_content": "An error occurred while starting the free trial. Please try again.",
+  "premium_trial_start_error_title": "Error",
+  "premium_trial_started_default_content": "🎉 Your 7-day free trial has started!",
+  "premium_trial_started_title": "Free trial started",
+  "premium_trial_title": "Premium 7-day free trial 🎉",
+  "premium_trial_unavailable_default_content": "You’ve already used the free trial on this device.",
+  "premium_trial_unavailable_title": "Free trial unavailable",
+  "settings_calendar_starting_day": "Week Starting Day",
+  "settings_calendar_starting_day_monday": "Monday",
+  "settings_calendar_starting_day_sunday": "Sunday",
+  "settings_calendar_title": "Calendar Settings",
+  "settings_calendar_weekday_english_first": "English First",
+  "settings_calendar_weekday_japanese_first": "Japanese First",
+  "settings_calendar_weekday_korean_first": "Korean First",
+  "settings_calendar_weekday_language": "Weekday Display Language",
+  "settings_language_english": "English",
+  "settings_language_feedback_fixed_notice": "Feedback content is fixed to the language setting at the time it was generated.\nSo changing the app language won't change the feedback language.",
+  "settings_language_japanese": "Japanese",
+  "settings_language_korean": "Korean",
+  "settings_language_title": "Language Settings",
+  "settings_theme_blue": "Blue",
+  "settings_theme_colors": "Theme colors",
+  "settings_theme_orange": "Orange",
+  "settings_theme_pink": "Pink",
+  "settings_theme_red": "Red",
+  "settings_theme_sky_blue": "Sky blue",
+  "settings_theme_title": "Theme settings",
+  "update_label": "Update",
+  "withdrawal_confirm": "Withdraw",
+  "withdrawal_confirm_dialog_content": "Upon withdrawal, all data including diaries, vocabulary, and study records will be deleted and cannot be recovered.",
+  "withdrawal_confirm_dialog_title": "Withdraw account",
+  "withdrawal_message": "Thank you for using our app.\nPlease select a reason for withdrawal.",
+  "withdrawal_reason_difficult_to_use": "It's hard to use",
+  "withdrawal_reason_hint": "Enter reason for withdrawal (required)",
+  "withdrawal_reason_lack_of_features": "It doesn't have the features I want",
+  "withdrawal_reason_low_usage": "I don't use it often",
+  "withdrawal_reason_other": "Other",
+  "withdrawal_reason_other_app": "I'm planning to use another app",
+  "withdrawal_title": "Withdraw account",
+  "withdrawal_warning": "🚨 Data cannot be recovered after withdrawal. Please choose carefully."
+}
