@@ -1,0 +1,6 @@
+{
+  "@@locale": "en",
+  "ai_chat_message_hint": "Enter your message...",
+  "ai_chat_placeholder": "Ask AI a question!",
+  "ai_chat_thinking": "AI is thinking..."
+}
