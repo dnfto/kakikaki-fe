@@ -1,0 +1,111 @@
+{
+  "@@locale": "en",
+  "@home_greeting": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_hours_remaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_about": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_text": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_launch_promo_after_onboarding_body": {
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_selected_date_format": {
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_total_entries_consecutive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_total_entries_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_total_entries_streak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "home_ai_analyzing": "AI Analyzing...",
+  "home_ai_analyzing_toast": "AI is analyzing feedback. Please try again in a moment.",
+  "home_ai_correct_failed_toast": "AI correction failed. Showing original diary.",
+  "home_ai_correcting_toast": "AI is correcting your diary. Please wait!",
+  "home_ai_feedback": "AI Feedback",
+  "home_ai_feedback_button": "View AI Feedback",
+  "home_ai_feedback_empty": "Enter a diary containing Korean words and expressions, and we will suggest natural Japanese expressions.",
+  "home_deadline_passed": "Deadline passed",
+  "home_deadline_soon": "Deadline soon!",
+  "home_diary_body": "Diary Body",
+  "home_diary_hint": "You can write in Korean. AI will suggest Japanese expressions.",
+  "home_diary_week_window_notice": "You can write a diary only for dates within 7 days before or after today.",
+  "home_diary_write_button": "Write Diary",
+  "home_first_diary_prompt": "Ready to write your first diary?",
+  "home_greeting": "Hello, {userName}!",
+  "home_hours_remaining": "Within {hours} hours",
+  "home_hours_remaining_about": "About {hours} hours left",
+  "home_hours_remaining_text": "{hours} hours left",
+  "home_launch_promo_after_onboarding_body": "It's a launch event, two months after signing up\nAll features up to {endDate} are free!",
+  "home_launch_promo_after_onboarding_title": "Launch celebration",
+  "home_nav_home": "Home",
+  "home_nav_my": "My",
+  "home_nav_study": "Study",
+  "home_nav_vocabulary": "Vocabulary",
+  "home_not_written": "Not Written",
+  "home_not_written_with_dot": "· Not Written",
+  "home_recommended_grammar": "Dictionary-based Recommended Expressions",
+  "home_recommended_grammar_empty": "We will recommend grammar patterns from Grammar-Dictionaries by analyzing your diary content.",
+  "home_selected_date_format": "{month}/{day} {weekday}",
+  "home_topic": "Recommended Topic",
+  "home_total_entries_consecutive": "Total {count} entries · {days} days in a row 🔥",
+  "home_total_entries_count": "You've written {count} entries 🔥 Great!",
+  "home_total_entries_streak": "Total {count} entries · 🔥 Writing for {days} consecutive days"
+}
