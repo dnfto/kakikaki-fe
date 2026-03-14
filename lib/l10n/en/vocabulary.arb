@@ -1,0 +1,20 @@
+{
+  "@@locale": "en",
+  "vocabulary_delete_content": "Remove selected words from your vocabulary? All learning progress will be reset.",
+  "vocabulary_delete_title": "Delete from vocabulary",
+  "vocabulary_detail_vocabulary_label": "Vocabulary",
+  "vocabulary_folder_name_hint": "Enter folder name",
+  "vocabulary_folder_premium": "Changing folder is a premium feature.",
+  "vocabulary_new_folder_title": "Create new folder",
+  "vocabulary_search_empty": "No results found.",
+  "vocabulary_search_hint": "Search words or expressions",
+  "vocabulary_toast_deleted": "Selected words have been deleted.",
+  "vocabulary_toast_folder_created": "New folder has been created.",
+  "vocabulary_toast_load_error": "Could not load vocabulary. Please sign in again.",
+  "vocabulary_toast_load_failed": "Could not load word. Please try again later.",
+  "vocabulary_toast_removed": "Removed from vocabulary.",
+  "vocabulary_toast_server_init": "Server is still initializing.",
+  "vocabulary_toast_word_removed": "Word was removed from the list. Check your vocabulary list.",
+  "vocabulary_tooltip_change_folder": "Change folder",
+  "vocabulary_tooltip_delete": "Delete"
+}
