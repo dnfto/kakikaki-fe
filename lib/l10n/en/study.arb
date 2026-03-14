@@ -1,0 +1,45 @@
+{
+  "@@locale": "en",
+  "@study_cards_count": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@study_delete_folder_message": {
+    "placeholders": {
+      "folderName": {
+        "type": "String"
+      }
+    }
+  },
+  "study_card_other_examples_title": "Other example sentences",
+  "study_card_other_examples_translation_info": "These examples are translated using the language setting at the time of feedback.\nYou can edit them freely.",
+  "study_card_tap_to_reveal": "Tap the card to reveal the meaning 💡",
+  "study_cards_count": "{current} / {total} cards",
+  "study_delete_folder_message": "Delete {folderName}? Words inside will move to uncategorized.",
+  "study_delete_folder_title": "Delete folder",
+  "study_edit_content": "Edit content",
+  "study_edit_folder_title": "Rename folder",
+  "study_example_translation": "Example translation",
+  "study_folder_name_hint": "Enter folder name",
+  "study_folder_selection_subtitle": "Please select a folder to study.",
+  "study_folder_selection_title": "Move folders",
+  "study_folder_uncategorized": "Uncategorized",
+  "study_furigana_hint": "For furigana, write as [kanji](furigana)!",
+  "study_kanji_annai": "🖤 Tap a kanji to practice writing!",
+  "study_label_example": "Example",
+  "study_label_meaning": "Meaning",
+  "study_move": "Move",
+  "study_new_folder_premium": "Creating new folders is a premium feature.",
+  "study_new_folder_title": "Create new folder",
+  "study_save": "Save",
+  "study_toast_folder_changed": "Folder has been changed.",
+  "study_toast_folder_created": "Folder has been created.",
+  "study_toast_folder_deleted": "Folder has been deleted.",
+  "study_toast_saved": "Saved to your cards!"
+}
