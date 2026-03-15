@@ -1,0 +1,463 @@
+{
+  "@@locale": "ja",
+  "@date_format_month_day": {
+    "placeholders": {
+      "monthName": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_feedback_connection_format": {
+    "placeholders": {
+      "connection": {
+        "type": "String"
+      }
+    }
+  },
+  "@diary_feedback_grammar_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_list_date_format": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_write_appbar_date": {
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_greeting": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_hours_remaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_about": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_text": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_launch_promo_after_onboarding_body": {
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_total_entries_streak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "@kanji_error_load_failed": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@kanji_error_no_data": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_guide_subscribe_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_trial_start_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "@study_cards_count": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@study_delete_folder_message": {
+    "placeholders": {
+      "folderName": {
+        "type": "String"
+      }
+    }
+  },
+  "action_cancel": "キャンセル",
+  "action_confirm": "確認",
+  "action_create": "作成",
+  "action_delete": "削除",
+  "action_edit": "編集",
+  "action_go_back_to_first_page": "最初のページに戻る",
+  "action_retry": "再試行",
+  "ai_chat_message_hint": "メッセージを入力...",
+  "ai_chat_placeholder": "AIに質問してみましょう！",
+  "ai_chat_thinking": "AIが回答を考えています...",
+  "alert_update_app": "最新バージョンに更新する必要があります。\n更新を進めてください！",
+  "auth_login_expired": "ログイン期限切れ",
+  "auth_login_expired_content": "安全なアプリ利用のため\n再度ログインしてください。",
+  "auth_login_required_diary_delete": "ログイン後に日記を削除できます。",
+  "auth_sign_in_apple": "Appleでログイン",
+  "auth_sign_in_google": "Googleでログイン",
+  "auth_sign_in_kakao": "カカオでログイン",
+  "auth_tagline": "日常の韓国語を日本語で",
+  "calendar_date_setting": "設定",
+  "calendar_validation_same_day_content": "開始日は終了日より前である必要があります。\n終了日を翌日に設定しますか？",
+  "calendar_validation_same_day_title": "開始日と終了日は異なる必要があります。",
+  "category_other": "その他",
+  "custom_default_nickname": "会員",
+  "date_format_month_day": "{monthName} {day}",
+  "dialog_analysis_retry_content": "AI分析に失敗した日記です。\nもう一度お試しになりますか？",
+  "dialog_analysis_retry_title": "分析を再試行",
+  "diary_card_default_title": "書いた日記",
+  "diary_card_status_analyzing": "AIがフィードバックを分析しています...",
+  "diary_card_status_failed": "分析に失敗",
+  "diary_card_view_feedback": "フィードバックを見る",
+  "diary_feedback_analysis_failed": "AIフィードバック分析に失敗しました。\n右上の編集(✏️)ボタンで原文を修正して再度お試しください。",
+  "diary_feedback_chip_grammar": "文型",
+  "diary_feedback_chip_vocabulary": "語彙",
+  "diary_feedback_connection_format": "接続形態: {connection}",
+  "diary_feedback_corrected": "校正された日記",
+  "diary_feedback_delete_content": "この日記を削除しますか？\n削除した日記は復元できません。",
+  "diary_feedback_delete_title": "日記を削除",
+  "diary_feedback_edit_choice_content": "原文を使用しますか？\nそれとも校正文を使用しますか？",
+  "diary_feedback_edit_choice_corrected": "校正文",
+  "diary_feedback_edit_choice_original": "原文",
+  "diary_feedback_edit_choice_title": "編集内容を選択",
+  "diary_feedback_free_limit_50": "無料会員は最大50個まで単語を保存できます。",
+  "diary_feedback_furigana": "ふりがな",
+  "diary_feedback_go_home": "ホームへ",
+  "diary_feedback_grammar_count": "{count}件お伝えします！",
+  "diary_feedback_grammar_title": "文法・スペルフィードバック",
+  "diary_feedback_no_error_found": "この日記では大きなスペル・文法ミスは見つかりませんでした。",
+  "diary_feedback_no_feedback": "分析に失敗したためフィードバックがありません。",
+  "diary_feedback_no_recommendation": "おすすめ表現はまだありません。",
+  "diary_feedback_no_recommendation_failed": "分析に失敗したためおすすめ表現がありません。",
+  "diary_feedback_realtime_completed": "✨ AIフィードバックの分析が完了しました！",
+  "diary_feedback_realtime_failed": "🚨 フィードバック分析に失敗しました。もう一度お試しください。",
+  "diary_feedback_tab_recommendation": "おすすめ表現",
+  "diary_list_date_format": "{year}年{month}月{day}日",
+  "diary_list_empty": "まだ日記がありません。",
+  "diary_list_title": "書いた日記",
+  "diary_processing_analyzing_subtitle": "おすすめ表現を探しています...",
+  "diary_processing_analyzing_title": "日記を分析中...",
+  "diary_processing_done_subtitle": "今日もいい一日が記録できました！",
+  "diary_processing_done_title": "フィードバック分析完了！",
+  "diary_processing_error": "分析中にエラーが発生しました。しばらくしてから再度お試しください。",
+  "diary_processing_go_feedback": "フィードバックを見る",
+  "diary_processing_go_home": "ホームに戻る",
+  "diary_processing_other_screen": "他の画面にいてもフィードバックは進みます 🤓",
+  "diary_processing_save_failed": "保存またはフィードバックリクエストに失敗しました。",
+  "diary_toast_deleted": "日記が削除されました。",
+  "diary_usage_helper_message": "無料会員は分析失敗した日記の再試行を除き、\n一日に二回までしか日記を書く/分析することができません。",
+  "diary_write_appbar_date": "{month}月{day}日 {weekday}",
+  "diary_write_feedback_min_length": "10文字以上書くとフィードバックをリクエストできます。",
+  "diary_write_feedback_request": "フィードバックをリクエスト",
+  "diary_write_hint": "今日はどうでしたか？",
+  "diary_write_no_words": "保存した単語はまだありません。",
+  "diary_write_tap_to_insert": "単語をタップすると日記に入力されます！",
+  "diary_write_vocabulary_peek": "単語帳をのぞく",
+  "error_generic": "エラーが発生しました。",
+  "error_login_processing_failed": "ログイン処理中に問題が発生しました。\nしばらくしてからもう一度お試しください。",
+  "error_page_no_item": "アイテムが存在しません。\nリストを追加してください。",
+  "error_page_not_found": "ページが見つかりません",
+  "error_platform_integration_failed": "連携中に問題が発生しました。",
+  "error_something_went_wrong": "問題が発生しました",
+  "error_temporary_generic": "一時的なエラーが発生しました。\nご不便をおかけして申し訳ありません。",
+  "feedback": "フィードバック",
+  "folder_uncategorized": "未分類",
+  "home_ai_analyzing": "AI分析中...",
+  "home_ai_analyzing_toast": "AIがフィードバックを分析しています。しばらくしてから再度お試しください。",
+  "home_ai_correct_failed_toast": "AI校正に失敗しました。原文を表示します。",
+  "home_ai_correcting_toast": "AIが日記を校正しています。少々お待ちください！",
+  "home_ai_feedback": "AIフィードバック",
+  "home_ai_feedback_button": "AIフィードバックを見る",
+  "home_ai_feedback_empty": "韓国語の単語・表現が含まれた日記を入力すると、自然な日本語表現を提案します。",
+  "home_deadline_passed": "締め切り済み",
+  "home_deadline_soon": "もうすぐ締め切り！",
+  "home_diary_body": "日記本文",
+  "home_diary_hint": "韓国語で書いても構いません。AIが日本語表現を提案します。",
+  "home_diary_week_window_notice": "今日を基準に前後7日以内の日付にのみ日記を書けます。",
+  "home_diary_write_button": "日記を書く",
+  "home_first_diary_prompt": "最初の日記を書いてみませんか？",
+  "home_greeting": "{userName}さん、こんにちは！",
+  "home_hours_remaining": "{hours}時間以内",
+  "home_hours_remaining_about": "あと約{hours}時間",
+  "home_hours_remaining_text": "あと{hours}時間",
+  "home_launch_promo_after_onboarding_body": "発売記念イベントとして、\n登録から2か月後に{endDate}まで、\nすべての機能を無料で利用できます！",
+  "home_launch_promo_after_onboarding_title": "リリース記念イベント",
+  "home_nav_home": "ホーム",
+  "home_nav_my": "マイ",
+  "home_nav_study": "学習",
+  "home_nav_vocabulary": "単語帳",
+  "home_not_written": "未作成",
+  "home_not_written_with_dot": "· 未作成",
+  "home_recommended_grammar": "辞書ベースのおすすめ表現",
+  "home_recommended_grammar_empty": "日記の内容を分析すると、Grammar-Dictionariesの文型をおすすめします。",
+  "home_selected_date_format": "{month}月{day}日 {weekday}",
+  "home_topic": "おすすめトピック",
+  "home_total_entries_consecutive": "合計{count}件・{days}日連続 🔥",
+  "home_total_entries_count": "合計{count}件書きました🔥 すごい！",
+  "home_total_entries_streak": "合計{count}件・🔥 {days}日連続作成中",
+  "inquiry_admin_reply": "管理者からの返信",
+  "inquiry_category": "カテゴリ",
+  "inquiry_category_error": "不具合報告",
+  "inquiry_category_suggestion": "機能提案",
+  "inquiry_content": "内容",
+  "inquiry_content_hint": "お問い合わせ内容を入力",
+  "inquiry_content_required": "内容を入力してください",
+  "inquiry_list_empty": "お問い合わせ履歴がまだありません。",
+  "inquiry_list_new_button": "問い合わせる",
+  "inquiry_login_required": "ログイン後にご利用ください。",
+  "inquiry_status_answered": "回答済み",
+  "inquiry_status_pending": "対応中",
+  "inquiry_status_processing": "処理中",
+  "inquiry_submit": "送信",
+  "inquiry_title_hint": "タイトルを入力",
+  "inquiry_title_optional": "タイトル（任意）",
+  "inquiry_toast_thanks": "ご意見ありがとうございます。確認いたします。",
+  "kanji_error_load_failed": "筆順データを読み込めませんでした。\n（{kanji}）",
+  "kanji_error_no_data": "DBに該当する漢字（{kanji}）のデータがありません。",
+  "login_error": "ログインエラー",
+  "month_april": "4月",
+  "month_august": "8月",
+  "month_december": "12月",
+  "month_february": "2月",
+  "month_january": "1月",
+  "month_july": "7月",
+  "month_june": "6月",
+  "month_march": "3月",
+  "month_may": "5月",
+  "month_november": "11月",
+  "month_october": "10月",
+  "month_september": "9月",
+  "my_page_alarm_toggle": "通知オン/オフ",
+  "my_page_alarm_tooltip": "フィードバック完了通知と毎日23時の\n作成リマインダーの受信を設定します。",
+  "my_page_calendar_settings": "カレンダー設定",
+  "my_page_diary_feed": "日記一覧",
+  "my_page_inquiry": "お問い合わせ / 不具合報告",
+  "my_page_language_settings": "言語設定",
+  "my_page_logout": "ログアウト",
+  "my_page_logout_confirm": "ログアウトしますか？",
+  "my_page_my_feed": "マイフィード",
+  "my_page_notification_disable_content": "設定で通知権限をオフにしてください。\nフィードバック完了時の通知を受け取れません。",
+  "my_page_notification_disable_title": "通知をオフ",
+  "my_page_notification_enable_permission_content": "フィードバック完了通知を受け取るには、設定で通知を許可してください。\n毎日23時の作成リマインダーも受け取れます。",
+  "my_page_notification_enable_permission_title": "通知の許可",
+  "my_page_notification_permission_go_to_settings": "設定へ移動",
+  "my_page_notification_permission_required_content": "通知をオンにするには、通知権限を許可してください。\n設定画面へ移動しますか？",
+  "my_page_notification_permission_required_title": "通知の権限が必要です",
+  "my_page_open_source_license": "オープンソースライセンス",
+  "my_page_privacy_policy": "個人情報処理方針および利用規約",
+  "my_page_theme_settings": "テーマ設定",
+  "my_page_title": "マイページ",
+  "my_page_version_info": "バージョン情報",
+  "my_page_withdrawal": "退会",
+  "my_toast_nickname_changed": "ニックネームが変更されました。",
+  "network_connection_exception": "ネットワーク接続が不安定です。もう一度お試しください！",
+  "network_error_content": "インターネットに接続されていない場合、\n一部の機能の使用が制限される場合があります。",
+  "network_error_generic": "申し訳ありません。エラーが発生しました。後でもう一度お試しください。",
+  "network_error_title": "ネットワークエラー",
+  "network_format_exception": "機能が変更されました。最新バージョンにアップグレードしてください！",
+  "nights_days": "{nights}泊 {days}日",
+  "onboarding_home_diary_write_body": "選んだ日付に日記を書くには、このボタンを押してください。\n日記を書くと単語を抽出して単語帳にブックマークできます。",
+  "onboarding_skip": "スキップ",
+  "onboarding_study_uncategorized_body": "「未分類」にはフォルダを指定せずにブックマークした単語が入ります。\nここから復習を始めましょう。",
+  "onboarding_vocabulary_dummy_meaning": "意味がここに表示されます",
+  "onboarding_vocabulary_dummy_reading": "さ",
+  "onboarding_vocabulary_dummy_word": "サンプル",
+  "onboarding_vocabulary_select_mode_body": "右のチェックリストボタンで複数の単語を選び、\n削除したりフォルダへ移動したりできます。",
+  "open_source_cc_description": "このライセンスには以下の条件が含まれます:\n• 表示: 原作者を表示する必要があります。\n• 継承: この著作物を利用して作成した二次著作物も同じライセンスを適用する必要があります。",
+  "open_source_kanji_source": "漢字筆順データ出典",
+  "open_source_kanjivg_description": "本アプリの漢字筆順データはUlrich ApelのKanjiVGプロジェクトデータを基にしており、Creative Commons Attribution-Share Alike 3.0ライセンスに従って配布されています。",
+  "open_source_license_info": "ライセンス情報",
+  "open_source_license_title": "オープンソースライセンス",
+  "premium_guide_go_to_pay": "支払いへ進む",
+  "premium_guide_subscribe_content": "{message}\nプレミアムを購読して無制限に利用してみましょう！",
+  "premium_guide_title": "プレミアム案内",
+  "premium_payment_coming_soon_content": "このメールではすでに無料トライアルをご利用いただいています。\n正式な決済システムを準備中ですので、しばらくお待ちください。",
+  "premium_payment_coming_soon_title": "プレミアム決済は準備中です 🚀",
+  "premium_trial_later_button": "あとで",
+  "premium_trial_start_button": "無料で始める",
+  "premium_trial_start_content": "{message}\n無料エクスペリエンスですべての機能を無制限に使ってみませんか？\n自動決済はありませんのでご安心ください！",
+  "premium_trial_start_error_content": "無料体験の開始中にエラーが発生しました。もう一度お試しください。",
+  "premium_trial_start_error_title": "エラー",
+  "premium_trial_started_default_content": "🎉 7日間無料体験を開始しました！",
+  "premium_trial_started_title": "7日間無料体験開始",
+  "premium_trial_title": "プレミアム7日間無料体験 🎉",
+  "premium_trial_unavailable_default_content": "この端末ではすでに無料体験を利用しました。",
+  "premium_trial_unavailable_title": "無料体験を利用できません",
+  "review_level_again": "やり直す",
+  "review_level_easy": "簡単",
+  "review_level_good": "普通",
+  "review_level_hard": "難しい",
+  "router_diary_feedback_missing": "フィードバックデータがありません。",
+  "settings_calendar_starting_day": "週の開始日",
+  "settings_calendar_starting_day_monday": "月曜日",
+  "settings_calendar_starting_day_sunday": "日曜日",
+  "settings_calendar_title": "カレンダー設定",
+  "settings_calendar_weekday_english_first": "英語優先",
+  "settings_calendar_weekday_japanese_first": "日本語優先",
+  "settings_calendar_weekday_korean_first": "韓国語優先",
+  "settings_calendar_weekday_language": "曜日表示言語",
+  "settings_language_english": "英語",
+  "settings_language_feedback_fixed_notice": "フィードバック内容は当時の言語に固定されます。\nそのため、言語設定を変更してもフィードバック内容の言語は変わりません。",
+  "settings_language_japanese": "日本語",
+  "settings_language_korean": "韓国語",
+  "settings_language_title": "言語設定",
+  "settings_theme_blue": "青",
+  "settings_theme_colors": "テーマカラー",
+  "settings_theme_dark": "ダーク",
+  "settings_theme_light": "ライト",
+  "settings_theme_orange": "オレンジ",
+  "settings_theme_pink": "ピンク",
+  "settings_theme_red": "赤",
+  "settings_theme_sky_blue": "スカイブルー",
+  "settings_theme_system": "システム",
+  "settings_theme_title": "テーマ設定",
+  "skip": "スキップ",
+  "study_card_other_examples_title": "他の例文",
+  "study_card_other_examples_translation_info": "フィードバックを受けた当時の設定言語で翻訳された例文です。\n自由に編集できます。",
+  "study_card_tap_to_reveal": "カードをタップして意味を見る 💡",
+  "study_cards_count": "{current} / {total} カード",
+  "study_delete_folder_message": "{folderName}を削除しますか？\n中の単語は未分類に移動します。",
+  "study_delete_folder_title": "フォルダを削除",
+  "study_edit_content": "内容を編集",
+  "study_edit_folder_title": "フォルダ名を変更",
+  "study_example_translation": "例文訳",
+  "study_folder_name_hint": "フォルダ名を入力",
+  "study_folder_selection_subtitle": "学習するフォルダを選択してください。",
+  "study_folder_selection_title": "フォルダ移動",
+  "study_folder_uncategorized": "未分類",
+  "study_furigana_hint": "ふりがなは [漢字](ふりがな) の形で書いてください！",
+  "study_kanji_annai": "🖤 漢字をタップすると書き取り練習ができます！",
+  "study_label_example": "例文",
+  "study_label_meaning": "意味",
+  "study_move": "移動",
+  "study_new_folder_premium": "新規フォルダ作成はプレミアム機能です。",
+  "study_new_folder_title": "新規フォルダを作成",
+  "study_save": "保存",
+  "study_toast_folder_changed": "フォルダが変更されました。",
+  "study_toast_folder_created": "フォルダが作成されました。",
+  "study_toast_folder_deleted": "フォルダが削除されました。",
+  "study_toast_saved": "マイカードに保存しました！",
+  "time_days_ago": "{days}日前",
+  "time_hours_ago": "{hours}時間前",
+  "time_just_now": "たった今",
+  "time_minutes_ago": "{minutes}分前",
+  "time_now": "今",
+  "tooltip_open_website": "ウェブサイトを開く",
+  "update_label": "更新",
+  "user_nickname_correct_format": "ニックネームは{digit}文字以下である必要があります。",
+  "validation_email_format": "正しいメール形式を入力してください",
+  "validation_four_digit_number": "4桁の数字を入力してください。",
+  "validation_password_invalid": "無効なパスワード",
+  "validation_password_invalid_character": "パスワードに無効な文字が含まれています。",
+  "validation_password_min_length": "パスワードは10文字以上である必要があります。",
+  "validation_password_require_letter": "パスワードには少なくとも1つの文字を含める必要があります。",
+  "validation_password_require_number": "パスワードには少なくとも1つの数字を含める必要があります。",
+  "validation_password_require_special": "パスワードには少なくとも1つの特殊文字を含める必要があります。",
+  "validation_password_required": "パスワードを入力してください。",
+  "validation_rePassword": "パスワードが一致しません。",
+  "validation_select_image": "続行するには、少なくとも1つの画像を選択してください！",
+  "vocabulary_delete_content": "選択した単語を単語帳から削除しますか？\n学習記録はすべてリセットされます。",
+  "vocabulary_delete_title": "単語帳から削除",
+  "vocabulary_detail_vocabulary_label": "語彙",
+  "vocabulary_folder_name_hint": "フォルダ名を入力",
+  "vocabulary_folder_premium": "フォルダ変更はプレミアム機能です。",
+  "vocabulary_new_folder_title": "新規フォルダを作成",
+  "vocabulary_search_empty": "検索結果がありません。",
+  "vocabulary_search_hint": "単語や表現を検索",
+  "vocabulary_toast_deleted": "選択した単語が削除されました。",
+  "vocabulary_toast_folder_created": "新規フォルダが作成されました。",
+  "vocabulary_toast_load_error": "単語帳を読み込めませんでした。再度ログインしてください。",
+  "vocabulary_toast_load_failed": "単語情報を読み込めませんでした。しばらくしてからお試しください。",
+  "vocabulary_toast_removed": "単語帳から削除されました。",
+  "vocabulary_toast_server_init": "サーバー初期化がまだ完了していません。",
+  "vocabulary_toast_word_removed": "単語がリストから削除されました。単語帳リストでご確認ください。",
+  "vocabulary_tooltip_change_folder": "フォルダを変更",
+  "vocabulary_tooltip_delete": "削除",
+  "weekday_friday": "金曜日",
+  "weekday_monday": "月曜日",
+  "weekday_saturday": "土曜日",
+  "weekday_short_friday": "金",
+  "weekday_short_monday": "月",
+  "weekday_short_saturday": "土",
+  "weekday_short_sunday": "日",
+  "weekday_short_thursday": "木",
+  "weekday_short_tuesday": "火",
+  "weekday_short_wednesday": "水",
+  "weekday_sunday": "日曜日",
+  "weekday_thursday": "木曜日",
+  "weekday_tuesday": "火曜日",
+  "weekday_wednesday": "水曜日",
+  "withdrawal_confirm": "退会する",
+  "withdrawal_confirm_dialog_content": "退会すると日記、単語帳、学習など\nすべてのデータが削除され、復元できません。",
+  "withdrawal_confirm_dialog_title": "退会",
+  "withdrawal_message": "ご利用ありがとうございました。\n退会理由を選択してください。",
+  "withdrawal_reason_difficult_to_use": "使いにくいです",
+  "withdrawal_reason_hint": "退会理由を入力（必須）",
+  "withdrawal_reason_lack_of_features": "欲しい機能がありません",
+  "withdrawal_reason_low_usage": "利用頻度が低い",
+  "withdrawal_reason_other": "その他",
+  "withdrawal_reason_other_app": "他のアプリを使う予定です",
+  "withdrawal_title": "退会",
+  "withdrawal_warning": "🚨 退会後はデータを復元できません。慎重に選択してください。"
+}
