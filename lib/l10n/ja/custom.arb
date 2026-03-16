@@ -1,0 +1,132 @@
+{
+  "@@locale": "ja",
+  "@kanji_error_load_failed": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@kanji_error_no_data": {
+    "placeholders": {
+      "kanji": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_guide_subscribe_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "@premium_trial_start_content": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "alert_update_app": "最新バージョンに更新する必要があります。\n更新を進めてください！",
+  "calendar_date_setting": "設定",
+  "calendar_validation_same_day_content": "開始日は終了日より前である必要があります。\n終了日を翌日に設定しますか？",
+  "calendar_validation_same_day_title": "開始日と終了日は異なる必要があります。",
+  "custom_default_nickname": "会員",
+  "inquiry_admin_reply": "管理者からの返信",
+  "inquiry_category": "カテゴリ",
+  "inquiry_category_error": "不具合報告",
+  "inquiry_category_suggestion": "機能提案",
+  "inquiry_content": "内容",
+  "inquiry_content_hint": "お問い合わせ内容を入力",
+  "inquiry_content_required": "内容を入力してください",
+  "inquiry_list_empty": "お問い合わせ履歴がまだありません。",
+  "inquiry_list_new_button": "問い合わせる",
+  "inquiry_login_required": "ログイン後にご利用ください。",
+  "inquiry_status_answered": "回答済み",
+  "inquiry_status_pending": "対応中",
+  "inquiry_status_processing": "処理中",
+  "inquiry_submit": "送信",
+  "inquiry_title_hint": "タイトルを入力",
+  "inquiry_title_optional": "タイトル（任意）",
+  "inquiry_toast_thanks": "ご意見ありがとうございます。確認いたします。",
+  "kanji_error_load_failed": "筆順データを読み込めませんでした。\n（{kanji}）",
+  "kanji_error_no_data": "DBに該当する漢字（{kanji}）のデータがありません。",
+  "my_page_alarm_toggle": "通知オン/オフ",
+  "my_page_alarm_tooltip": "フィードバック完了通知と毎日23時の\n作成リマインダーの受信を設定します。",
+  "my_page_calendar_settings": "カレンダー設定",
+  "my_page_diary_feed": "日記一覧",
+  "my_page_inquiry": "お問い合わせ / 不具合報告",
+  "my_page_language_settings": "言語設定",
+  "my_page_logout": "ログアウト",
+  "my_page_logout_confirm": "ログアウトしますか？",
+  "my_page_my_feed": "マイフィード",
+  "my_page_notification_disable_content": "設定で通知権限をオフにしてください。\nフィードバック完了時の通知を受け取れません。",
+  "my_page_notification_disable_title": "通知をオフ",
+  "my_page_notification_enable_permission_content": "フィードバック完了通知を受け取るには、設定で通知を許可してください。\n毎日23時の作成リマインダーも受け取れます。",
+  "my_page_notification_enable_permission_title": "通知の許可",
+  "my_page_notification_permission_go_to_settings": "設定へ移動",
+  "my_page_notification_permission_required_content": "通知をオンにするには、通知権限を許可してください。\n設定画面へ移動しますか？",
+  "my_page_notification_permission_required_title": "通知の権限が必要です",
+  "my_page_open_source_license": "オープンソースライセンス",
+  "my_page_privacy_policy": "個人情報処理方針および利用規約",
+  "my_page_theme_settings": "テーマ設定",
+  "my_page_title": "マイページ",
+  "my_page_version_info": "バージョン情報",
+  "my_page_withdrawal": "退会",
+  "my_toast_nickname_changed": "ニックネームが変更されました。",
+  "nights_days": "{nights}泊 {days}日",
+  "open_source_cc_description": "このライセンスには以下の条件が含まれます:\n• 表示: 原作者を表示する必要があります。\n• 継承: この著作物を利用して作成した二次著作物も同じライセンスを適用する必要があります。",
+  "open_source_kanji_source": "漢字筆順データ出典",
+  "open_source_kanjivg_description": "本アプリの漢字筆順データはUlrich ApelのKanjiVGプロジェクトデータを基にしており、Creative Commons Attribution-Share Alike 3.0ライセンスに従って配布されています。",
+  "open_source_license_info": "ライセンス情報",
+  "open_source_license_title": "オープンソースライセンス",
+  "premium_guide_go_to_pay": "支払いへ進む",
+  "premium_guide_subscribe_content": "{message}\nプレミアムを購読して無制限に利用してみましょう！",
+  "premium_guide_title": "プレミアム案内",
+  "premium_payment_coming_soon_content": "このメールではすでに無料トライアルをご利用いただいています。\n正式な決済システムを準備中ですので、しばらくお待ちください。",
+  "premium_payment_coming_soon_title": "プレミアム決済は準備中です 🚀",
+  "premium_trial_later_button": "あとで",
+  "premium_trial_start_button": "無料で始める",
+  "premium_trial_start_content": "{message}\n無料エクスペリエンスですべての機能を無制限に使ってみませんか？\n自動決済はありませんのでご安心ください！",
+  "premium_trial_start_error_content": "無料体験の開始中にエラーが発生しました。もう一度お試しください。",
+  "premium_trial_start_error_title": "エラー",
+  "premium_trial_started_default_content": "🎉 7日間無料体験を開始しました！",
+  "premium_trial_started_title": "7日間無料体験開始",
+  "premium_trial_title": "プレミアム7日間無料体験 🎉",
+  "premium_trial_unavailable_default_content": "この端末ではすでに無料体験を利用しました。",
+  "premium_trial_unavailable_title": "無料体験を利用できません",
+  "settings_calendar_starting_day": "週の開始日",
+  "settings_calendar_starting_day_monday": "月曜日",
+  "settings_calendar_starting_day_sunday": "日曜日",
+  "settings_calendar_title": "カレンダー設定",
+  "settings_calendar_weekday_english_first": "英語優先",
+  "settings_calendar_weekday_japanese_first": "日本語優先",
+  "settings_calendar_weekday_korean_first": "韓国語優先",
+  "settings_calendar_weekday_language": "曜日表示言語",
+  "settings_language_english": "英語",
+  "settings_language_feedback_fixed_notice": "フィードバック内容は当時の言語に固定されます。\nそのため、言語設定を変更してもフィードバック内容の言語は変わりません。",
+  "settings_language_japanese": "日本語",
+  "settings_language_korean": "韓国語",
+  "settings_language_title": "言語設定",
+  "settings_theme_blue": "青",
+  "settings_theme_colors": "テーマカラー",
+  "settings_theme_orange": "オレンジ",
+  "settings_theme_pink": "ピンク",
+  "settings_theme_red": "赤",
+  "settings_theme_sky_blue": "スカイブルー",
+  "settings_theme_title": "テーマ設定",
+  "update_label": "更新",
+  "withdrawal_confirm": "退会する",
+  "withdrawal_confirm_dialog_content": "退会すると日記、単語帳、学習など\nすべてのデータが削除され、復元できません。",
+  "withdrawal_confirm_dialog_title": "退会",
+  "withdrawal_message": "ご利用ありがとうございました。\n退会理由を選択してください。",
+  "withdrawal_reason_difficult_to_use": "使いにくいです",
+  "withdrawal_reason_hint": "退会理由を入力（必須）",
+  "withdrawal_reason_lack_of_features": "欲しい機能がありません",
+  "withdrawal_reason_low_usage": "利用頻度が低い",
+  "withdrawal_reason_other": "その他",
+  "withdrawal_reason_other_app": "他のアプリを使う予定です",
+  "withdrawal_title": "退会",
+  "withdrawal_warning": "🚨 退会後はデータを復元できません。慎重に選択してください。"
+}
