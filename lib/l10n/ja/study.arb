@@ -1,0 +1,45 @@
+{
+  "@@locale": "ja",
+  "@study_cards_count": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@study_delete_folder_message": {
+    "placeholders": {
+      "folderName": {
+        "type": "String"
+      }
+    }
+  },
+  "study_card_other_examples_title": "他の例文",
+  "study_card_other_examples_translation_info": "フィードバックを受けた当時の設定言語で翻訳された例文です。\n自由に編集できます。",
+  "study_card_tap_to_reveal": "カードをタップして意味を見る 💡",
+  "study_cards_count": "{current} / {total} カード",
+  "study_delete_folder_message": "{folderName}を削除しますか？\n中の単語は未分類に移動します。",
+  "study_delete_folder_title": "フォルダを削除",
+  "study_edit_content": "内容を編集",
+  "study_edit_folder_title": "フォルダ名を変更",
+  "study_example_translation": "例文訳",
+  "study_folder_name_hint": "フォルダ名を入力",
+  "study_folder_selection_subtitle": "学習するフォルダを選択してください。",
+  "study_folder_selection_title": "フォルダ移動",
+  "study_folder_uncategorized": "未分類",
+  "study_furigana_hint": "ふりがなは [漢字](ふりがな) の形で書いてください！",
+  "study_kanji_annai": "🖤 漢字をタップすると書き取り練習ができます！",
+  "study_label_example": "例文",
+  "study_label_meaning": "意味",
+  "study_move": "移動",
+  "study_new_folder_premium": "新規フォルダ作成はプレミアム機能です。",
+  "study_new_folder_title": "新規フォルダを作成",
+  "study_save": "保存",
+  "study_toast_folder_changed": "フォルダが変更されました。",
+  "study_toast_folder_created": "フォルダが作成されました。",
+  "study_toast_folder_deleted": "フォルダが削除されました。",
+  "study_toast_saved": "マイカードに保存しました！"
+}
