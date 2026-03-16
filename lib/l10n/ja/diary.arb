@@ -1,0 +1,89 @@
+{
+  "@@locale": "ja",
+  "@diary_feedback_connection_format": {
+    "placeholders": {
+      "connection": {
+        "type": "String"
+      }
+    }
+  },
+  "@diary_feedback_grammar_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_list_date_format": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_write_appbar_date": {
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "diary_card_default_title": "書いた日記",
+  "diary_card_status_analyzing": "AIがフィードバックを分析しています...",
+  "diary_card_status_failed": "分析に失敗",
+  "diary_card_view_feedback": "フィードバックを見る",
+  "diary_feedback_analysis_failed": "AIフィードバック分析に失敗しました。\n右上の編集(✏️)ボタンで原文を修正して再度お試しください。",
+  "diary_feedback_chip_grammar": "文型",
+  "diary_feedback_chip_vocabulary": "語彙",
+  "diary_feedback_connection_format": "接続形態: {connection}",
+  "diary_feedback_corrected": "校正された日記",
+  "diary_feedback_delete_content": "この日記を削除しますか？\n削除した日記は復元できません。",
+  "diary_feedback_delete_title": "日記を削除",
+  "diary_feedback_edit_choice_content": "原文を使用しますか？\nそれとも校正文を使用しますか？",
+  "diary_feedback_edit_choice_corrected": "校正文",
+  "diary_feedback_edit_choice_original": "原文",
+  "diary_feedback_edit_choice_title": "編集内容を選択",
+  "diary_feedback_free_limit_50": "無料会員は最大50個まで単語を保存できます。",
+  "diary_feedback_furigana": "ふりがな",
+  "diary_feedback_go_home": "ホームへ",
+  "diary_feedback_grammar_count": "{count}件お伝えします！",
+  "diary_feedback_grammar_title": "文法・スペルフィードバック",
+  "diary_feedback_no_error_found": "この日記では大きなスペル・文法ミスは見つかりませんでした。",
+  "diary_feedback_no_feedback": "分析に失敗したためフィードバックがありません。",
+  "diary_feedback_no_recommendation": "おすすめ表現はまだありません。",
+  "diary_feedback_no_recommendation_failed": "分析に失敗したためおすすめ表現がありません。",
+  "diary_feedback_realtime_completed": "✨ AIフィードバックの分析が完了しました！",
+  "diary_feedback_realtime_failed": "🚨 フィードバック分析に失敗しました。もう一度お試しください。",
+  "diary_feedback_tab_recommendation": "おすすめ表現",
+  "diary_list_date_format": "{year}年{month}月{day}日",
+  "diary_list_empty": "まだ日記がありません。",
+  "diary_list_title": "書いた日記",
+  "diary_processing_analyzing_subtitle": "おすすめ表現を探しています...",
+  "diary_processing_analyzing_title": "日記を分析中...",
+  "diary_processing_done_subtitle": "今日もいい一日が記録できました！",
+  "diary_processing_done_title": "フィードバック分析完了！",
+  "diary_processing_go_feedback": "フィードバックを見る",
+  "diary_processing_go_home": "ホームに戻る",
+  "diary_processing_other_screen": "他の画面にいてもフィードバックは進みます 🤓",
+  "diary_toast_deleted": "日記が削除されました。",
+  "diary_usage_helper_message": "無料会員は分析失敗した日記の再試行を除き、\n一日に二回までしか日記を書く/分析することができません。",
+  "diary_write_appbar_date": "{month}月{day}日 {weekday}",
+  "diary_write_feedback_min_length": "10文字以上書くとフィードバックをリクエストできます。",
+  "diary_write_feedback_request": "フィードバックをリクエスト",
+  "diary_write_hint": "今日はどうでしたか？",
+  "diary_write_no_words": "保存した単語はまだありません。",
+  "diary_write_tap_to_insert": "単語をタップすると日記に入力されます！",
+  "diary_write_vocabulary_peek": "単語帳をのぞく"
+}
