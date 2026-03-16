@@ -1,0 +1,81 @@
+{
+  "@@locale": "ja",
+  "@home_greeting": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_hours_remaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_about": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_text": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_launch_promo_after_onboarding_body": {
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_total_entries_streak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "home_ai_analyzing": "AI分析中...",
+  "home_ai_analyzing_toast": "AIがフィードバックを分析しています。しばらくしてから再度お試しください。",
+  "home_ai_correct_failed_toast": "AI校正に失敗しました。原文を表示します。",
+  "home_ai_correcting_toast": "AIが日記を校正しています。少々お待ちください！",
+  "home_ai_feedback": "AIフィードバック",
+  "home_ai_feedback_button": "AIフィードバックを見る",
+  "home_ai_feedback_empty": "韓国語の単語・表現が含まれた日記を入力すると、自然な日本語表現を提案します。",
+  "home_deadline_passed": "締め切り済み",
+  "home_deadline_soon": "もうすぐ締め切り！",
+  "home_diary_body": "日記本文",
+  "home_diary_hint": "韓国語で書いても構いません。AIが日本語表現を提案します。",
+  "home_diary_week_window_notice": "今日を基準に前後7日以内の日付にのみ日記を書けます。",
+  "home_diary_write_button": "日記を書く",
+  "home_first_diary_prompt": "最初の日記を書いてみませんか？",
+  "home_greeting": "{userName}さん、こんにちは！",
+  "home_hours_remaining": "{hours}時間以内",
+  "home_hours_remaining_about": "あと約{hours}時間",
+  "home_hours_remaining_text": "あと{hours}時間",
+  "home_launch_promo_after_onboarding_body": "発売記念イベントとして、\n登録から2か月後に{endDate}まで、\nすべての機能を無料で利用できます！",
+  "home_launch_promo_after_onboarding_title": "リリース記念イベント",
+  "home_nav_home": "ホーム",
+  "home_nav_my": "マイ",
+  "home_nav_study": "学習",
+  "home_nav_vocabulary": "単語帳",
+  "home_not_written": "未作成",
+  "home_not_written_with_dot": "· 未作成",
+  "home_recommended_grammar": "辞書ベースのおすすめ表現",
+  "home_recommended_grammar_empty": "日記の内容を分析すると、Grammar-Dictionariesの文型をおすすめします。",
+  "home_selected_date_format": "{month}月{day}日 {weekday}",
+  "home_topic": "おすすめトピック",
+  "home_total_entries_consecutive": "合計{count}件・{days}日連続 🔥",
+  "home_total_entries_count": "合計{count}件書きました🔥 すごい！",
+  "home_total_entries_streak": "合計{count}件・🔥 {days}日連続作成中"
+}
