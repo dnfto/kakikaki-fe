@@ -1,0 +1,7 @@
+{
+  "@@locale": "ko",
+  "auth_sign_in_apple": "Apple로 로그인",
+  "auth_sign_in_google": "구글로 로그인",
+  "auth_sign_in_kakao": "카카오톡으로 로그인",
+  "auth_tagline": "일상 속 한국어를 일본어로"
+}
