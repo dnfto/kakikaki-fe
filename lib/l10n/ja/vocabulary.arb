@@ -1,0 +1,20 @@
+{
+  "@@locale": "ja",
+  "vocabulary_delete_content": "選択した単語を単語帳から削除しますか？\n学習記録はすべてリセットされます。",
+  "vocabulary_delete_title": "単語帳から削除",
+  "vocabulary_detail_vocabulary_label": "語彙",
+  "vocabulary_folder_name_hint": "フォルダ名を入力",
+  "vocabulary_folder_premium": "フォルダ変更はプレミアム機能です。",
+  "vocabulary_new_folder_title": "新規フォルダを作成",
+  "vocabulary_search_empty": "検索結果がありません。",
+  "vocabulary_search_hint": "単語や表現を検索",
+  "vocabulary_toast_deleted": "選択した単語が削除されました。",
+  "vocabulary_toast_folder_created": "新規フォルダが作成されました。",
+  "vocabulary_toast_load_error": "単語帳を読み込めませんでした。再度ログインしてください。",
+  "vocabulary_toast_load_failed": "単語情報を読み込めませんでした。しばらくしてからお試しください。",
+  "vocabulary_toast_removed": "単語帳から削除されました。",
+  "vocabulary_toast_server_init": "サーバー初期化がまだ完了していません。",
+  "vocabulary_toast_word_removed": "単語がリストから削除されました。単語帳リストでご確認ください。",
+  "vocabulary_tooltip_change_folder": "フォルダを変更",
+  "vocabulary_tooltip_delete": "削除"
+}
