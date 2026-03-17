@@ -1,0 +1,6 @@
+{
+  "@@locale": "ko",
+  "ai_chat_message_hint": "메시지를 입력하세요...",
+  "ai_chat_placeholder": "AI에게 질문해보세요!",
+  "ai_chat_thinking": "AI가 답변을 생각 중이에요..."
+}
