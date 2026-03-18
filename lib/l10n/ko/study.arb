@@ -1,0 +1,45 @@
+{
+  "@@locale": "ko",
+  "@study_cards_count": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@study_delete_folder_message": {
+    "placeholders": {
+      "folderName": {
+        "type": "String"
+      }
+    }
+  },
+  "study_card_other_examples_title": "다른 예문들",
+  "study_card_other_examples_translation_info": "피드백 받을 당시 설정된 언어로 번역된 예문입니다.\n직접 수정이 가능합니다.",
+  "study_card_tap_to_reveal": "카드를 탭하여 뜻 보기 💡",
+  "study_cards_count": "{current} / {total} 카드",
+  "study_delete_folder_message": "{folderName} 폴더를 삭제하시겠어요?\n폴더 안의 단어들은 미분류로 이동됩니다.",
+  "study_delete_folder_title": "폴더 삭제",
+  "study_edit_content": "내용 수정",
+  "study_edit_folder_title": "폴더 이름 수정",
+  "study_example_translation": "예문 번역",
+  "study_folder_name_hint": "폴더 이름을 입력하세요",
+  "study_folder_selection_subtitle": "학습할 폴더를 선택해 주세요.",
+  "study_folder_selection_title": "폴더 이동",
+  "study_folder_uncategorized": "미분류",
+  "study_furigana_hint": "후리가나를 넣고싶으시면 [한자](후리가나) 형태로 작성해주세요!",
+  "study_kanji_annai": "🖤 한자 클릭 시 쓰기 연습이 가능해요!",
+  "study_label_example": "예문",
+  "study_label_meaning": "뜻",
+  "study_move": "이동",
+  "study_new_folder_premium": "새 폴더 생성은 프리미엄 전용 기능이에요.",
+  "study_new_folder_title": "새 폴더 만들기",
+  "study_save": "저장하기",
+  "study_toast_folder_changed": "폴더가 변경되었어요.",
+  "study_toast_folder_created": "폴더가 생성되었어요.",
+  "study_toast_folder_deleted": "폴더가 삭제되었어요.",
+  "study_toast_saved": "나만의 카드로 저장되었어요!"
+}
