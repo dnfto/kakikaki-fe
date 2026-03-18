@@ -1,0 +1,89 @@
+{
+  "@@locale": "ko",
+  "@diary_feedback_connection_format": {
+    "placeholders": {
+      "connection": {
+        "type": "String"
+      }
+    }
+  },
+  "@diary_feedback_grammar_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_list_date_format": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "@diary_write_appbar_date": {
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "diary_card_default_title": "작성한 일기",
+  "diary_card_status_analyzing": "AI가 피드백을 분석하고 있어요...",
+  "diary_card_status_failed": "분석 실패",
+  "diary_card_view_feedback": "피드백 보기",
+  "diary_feedback_analysis_failed": "AI 피드백 분석에 실패했습니다.\n우측 상단의 편집(✏️) 버튼을 눌러 원문을 수정하고 다시 시도해보세요.",
+  "diary_feedback_chip_grammar": "문형",
+  "diary_feedback_chip_vocabulary": "어휘",
+  "diary_feedback_connection_format": "접속 형태: {connection}",
+  "diary_feedback_corrected": "교정된 일기",
+  "diary_feedback_delete_content": "정말로 이 일기를 삭제하시겠어요?\n삭제된 일기는 복구할 수 없어요.",
+  "diary_feedback_delete_title": "일기 삭제",
+  "diary_feedback_edit_choice_content": "원문을 사용하시겠습니까\n아니면 교정본을 사용하시겠습니까?",
+  "diary_feedback_edit_choice_corrected": "교정본",
+  "diary_feedback_edit_choice_original": "원문",
+  "diary_feedback_edit_choice_title": "수정할 내용 선택",
+  "diary_feedback_free_limit_50": "무료 회원은 최대 50개까지만 단어를 저장할 수 있어요.",
+  "diary_feedback_furigana": "후리가나",
+  "diary_feedback_go_home": "홈화면으로 가기",
+  "diary_feedback_grammar_count": "{count}개를 알려드릴게요!",
+  "diary_feedback_grammar_title": "문법/철자 피드백",
+  "diary_feedback_no_error_found": "이번 일기에서는 큰 철자/문법 오류를 찾지 못했어요.",
+  "diary_feedback_no_feedback": "분석에 실패하여 제공할 피드백이 없습니다.",
+  "diary_feedback_no_recommendation": "추천 표현이 아직 없어요.",
+  "diary_feedback_no_recommendation_failed": "분석에 실패하여 추천 표현이 없습니다.",
+  "diary_feedback_realtime_completed": "✨ AI 피드백 분석이 완료되었어요!",
+  "diary_feedback_realtime_failed": "🚨 피드백 분석에 실패했어요. 다시 시도해 주세요.",
+  "diary_feedback_tab_recommendation": "추천표현",
+  "diary_list_date_format": "{year}년 {month}월 {day}일",
+  "diary_list_empty": "아직 작성한 일기가 없어요.",
+  "diary_list_title": "내가 쓴 일기",
+  "diary_processing_analyzing_subtitle": "추천할 표현 찾는 중...",
+  "diary_processing_analyzing_title": "일기 분석 중...",
+  "diary_processing_done_subtitle": "오늘도 멋진 하루 기록 완료!",
+  "diary_processing_done_title": "피드백 분석 완료!",
+  "diary_processing_go_feedback": "피드백 보러가기",
+  "diary_processing_go_home": "홈화면으로 돌아가기",
+  "diary_processing_other_screen": "다른 화면에 계셔도 피드백이 진행됩니다 🤓",
+  "diary_toast_deleted": "일기가 삭제되었어요.",
+  "diary_usage_helper_message": "무료 회원은 분석 실패 일기 재시도를 제외하고\n하루에 두 번만 일기를 작성/분석할 수 있어요.",
+  "diary_write_appbar_date": "{month}월 {day}일 {weekday}",
+  "diary_write_feedback_min_length": "10자 이상 작성해야 피드백을 요청할 수 있어요.",
+  "diary_write_feedback_request": "피드백 요청하기",
+  "diary_write_hint": "오늘 하루는 어땠나요?",
+  "diary_write_no_words": "아직 저장된 단어가 없어요.",
+  "diary_write_tap_to_insert": "단어를 누르면 일기에 입력돼요!",
+  "diary_write_vocabulary_peek": "단어장 엿보기"
+}
