@@ -1,0 +1,111 @@
+{
+  "@@locale": "ko",
+  "@home_greeting": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_hours_remaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_about": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_hours_remaining_text": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_launch_promo_after_onboarding_body": {
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_selected_date_format": {
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "day": {
+        "type": "int"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "@home_total_entries_consecutive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_total_entries_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@home_total_entries_streak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "home_ai_analyzing": "AI 분석 중...",
+  "home_ai_analyzing_toast": "AI가 피드백을 분석하고 있어요. 잠시 후 다시 눌러 주세요.",
+  "home_ai_correct_failed_toast": "AI 교정에 실패했습니다. 원문 일기를 보여드릴게요.",
+  "home_ai_correcting_toast": "AI가 열심히 일기를 교정하고 있어요. 잠시만 기다려주세요!",
+  "home_ai_feedback": "AI 피드백",
+  "home_ai_feedback_button": "AI 피드백 보기",
+  "home_ai_feedback_empty": "한국어 단어·표현이 포함된 일기를 입력하면, 자연스러운 일본어 표현을 제안합니다.",
+  "home_deadline_passed": "마감됐어요",
+  "home_deadline_soon": "곧 마감돼요!",
+  "home_diary_body": "일기 본문",
+  "home_diary_hint": "한국어로 작성해도 됩니다. AI가 일본어 표현을 제안합니다.",
+  "home_diary_week_window_notice": "오늘을 기준으로 앞뒤 7일 이내 날짜에만 일기를 작성할 수 있어요.",
+  "home_diary_write_button": "일기 작성하기",
+  "home_first_diary_prompt": "첫 일기를 작성해 볼까요?",
+  "home_greeting": "{userName}님, 안녕하세요!",
+  "home_hours_remaining": "{hours}시간 이내",
+  "home_hours_remaining_about": "약 {hours}시간 남았어요",
+  "home_hours_remaining_text": "{hours}시간 남았어요",
+  "home_launch_promo_after_onboarding_body": "출시 기념 이벤트로 가입으로부터 두 달 뒤인\n{endDate}까지 모든 기능을 무료로 이용할 수 있어요!",
+  "home_launch_promo_after_onboarding_title": "출시 기념 이벤트",
+  "home_nav_home": "홈",
+  "home_nav_my": "마이",
+  "home_nav_study": "학습",
+  "home_nav_vocabulary": "단어장",
+  "home_not_written": "미작성",
+  "home_not_written_with_dot": "· 미작성",
+  "home_recommended_grammar": "사전 기반 추천 표현",
+  "home_recommended_grammar_empty": "일기 내용을 분석하면 Grammar-Dictionaries의 문형을 추천해드립니다.",
+  "home_selected_date_format": "{month}월 {day}일 {weekday}",
+  "home_topic": "추천 주제",
+  "home_total_entries_consecutive": "총 {count}편・{days}일 연속 작성 중 🔥",
+  "home_total_entries_count": "총 {count}편 작성하셨네요🔥 대단해요!",
+  "home_total_entries_streak": "총 {count}편・🔥 {days}일 연속 작성 중"
+}
