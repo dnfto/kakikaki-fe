@@ -1,122 +1,122 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:kakikaki/core/config/config.dart';
+import 'package:kakikaki/core/error/error_reporter.dart';
+import 'package:kakikaki/core/utils/log_utils.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:kakikaki/firebase_options.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:sentry_flutter/sentry_flutter.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'app/app.dart';
+
+@pragma('vm:entry-point')
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  // TODO: 여기서 로컬 DB(Hive)에 알림을 저장하거나 뱃지 카운트를 올릴 수 있습니다.
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+void main() async {
+  await _initializeWithSentry();
+}
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+Future<void> _initializeWithSentry() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // 2. Config 전에 Firebase 먼저 초기화
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+  await Config.ensureInitialized();
+  ErrorReporter.installGlobalHandlers();
+
+  // 앱 버전 정보 가져오기
+  final packageInfo = await PackageInfo.fromPlatform();
+  final appVersion = '${packageInfo.version}+${packageInfo.buildNumber}';
+
+  if (Config.enableSentry && Config.sentryDsn.isNotEmpty) {
+    await SentryFlutter.init(
+      (options) {
+        options.dsn = Config.sentryDsn;
+        options.environment = Config.isDevFlavor ? 'development' : 'production';
+        options.tracesSampleRate = 1.0; // 샘플링 비율 (1.0 = 100% 전송)
+        options.debug = kDebugMode; // 디버그 모드에서는 Sentry 비활성화
+        options.release = '${Config.appName}@$appVersion';
+        options.dist = packageInfo.buildNumber; // 빌드 번호
+        options.enableAutoPerformanceTracing = true; // 성능 모니터링
+        options.enableAutoSessionTracking = true; // 브레드크럼 자동 수집
+
+        options.attachStacktrace = true; // 모든 이벤트에 스택 트레이스 첨부
+        options.enableNdkScopeSync = true; // NDK 스코프 동기화
+        options.anrEnabled = true; // ANR (Application Not Responding) 감지
+      },
+      appRunner: () => _runApp(),
     );
+  } else {
+    await _runApp(); // Sentry 없이 앱 실행
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+Future<void> _runApp() async {
+  final binding = WidgetsBinding.instance;
+  App.preserveSplash(widgetsBinding: binding);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+  // 릴리즈 모드에서 생명주기 관리
+  if (kReleaseMode) {
+    binding.addObserver(
+      LifecycleEventHandler(
+        detachedCallBack: () async {
+          Log.i('앱이 백그라운드로 이동');
+        },
+        resumedCallBack: () async {
+          Log.i('앱이 포그라운드로 복귀');
+        },
       ),
     );
+  }
+
+  try {
+    await App.initialize();
+
+    // 앱 초기화 완료 후 스플래시 제거
+    await App.removeSplash();
+  } catch (e, stackTrace) {
+    await ErrorReporter.report(
+      e,
+      stackTrace: stackTrace,
+      context: '앱 초기화 실패',
+    );
+
+    // 에러 발생 시에도 스플래시 제거
+    await App.removeSplash();
+  }
+
+  runApp(const App());
+}
+
+/// 앱 생명주기 이벤트 핸들러
+class LifecycleEventHandler extends WidgetsBindingObserver {
+  final Future<void> Function()? detachedCallBack;
+  final Future<void> Function()? resumedCallBack;
+
+  LifecycleEventHandler({
+    this.detachedCallBack,
+    this.resumedCallBack,
+  });
+
+  @override
+  Future<void> didChangeAppLifecycleState(AppLifecycleState state) async {
+    switch (state) {
+      case AppLifecycleState.detached:
+        await detachedCallBack?.call();
+        break;
+      case AppLifecycleState.resumed:
+        await resumedCallBack?.call();
+        break;
+      default:
+        break;
+    }
   }
 }
