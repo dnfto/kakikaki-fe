@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">192.168.45.57</domain>
+        <!-- TODO: 앱의 도메인으로 변경하 -->
+        <domain includeSubdomains="true">web.example.com</domain>
+        <domain includeSubdomains="true">web-dev.example.com</domain>
+        <domain includeSubdomains="true">api.example.com</domain>
+        <domain includeSubdomains="true">r2.example.com</domain>
+    </domain-config>
+    <!-- 기본 설정: HTTPS만 허용 -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">example.com</domain>
+    </domain-config>
+</network-security-config>

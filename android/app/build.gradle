@@ -1,0 +1,181 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// Sentry Gradle Plugin 적용 (디버그 심볼 자동 업로드)
+apply plugin: 'io.sentry.android.gradle'
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode') ?: '1'
+def flutterVersionName = localProperties.getProperty('flutter.versionName') ?: '1.0'
+
+// ENV_FILE에서 키 값 추출 (공통)
+def getValueFromEnvFile(String fileName, String keyName) {
+    def value = ""
+    // android 폴더의 상위(플러터 루트 폴더)에서 찾도록 '../' 추가
+    def envFile = rootProject.file('../' + fileName) 
+    
+    if (envFile.exists()) {
+        envFile.eachLine { line ->
+            def trimmed = line.trim()
+            if (trimmed.startsWith(keyName + "=")) {
+                def parts = trimmed.split("=", 2)
+                if (parts.length == 2) value = parts[1].trim()
+            }
+        }
+    } else {
+        println("🚨 경고: ${fileName} 파일을 찾을 수 없습니다! 경로: ${envFile.absolutePath}")
+    }
+    return value
+}
+
+def getKakaoKeyFromEnvFile(String fileName) {
+    def key = getValueFromEnvFile(fileName, "KAKAO_NATIVE_APP_KEY")
+    if (key == "") {
+        println("🚨 에러: ${fileName}에서 카카오 키를 읽지 못했습니다! 기본값이 들어갑니다.")
+        return "default"
+    } else {
+        println("✅ 안드로이드 카카오 키 로드 성공: ${key}")
+        return key
+    }
+}
+android {
+    namespace "com.lingorithm.kakikaki"
+    compileSdk 36
+
+    ndkVersion "28.2.13676358"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    
+    // Flavor별 google-services.json 자동 선택
+    // Google Services 플러그인이 자동으로 다음 경로에서 찾습니다:
+    // - android/app/src/dev/google-services.json (개발 환경)
+    // - android/app/src/prod/google-services.json (프로덕션 환경)
+    // - android/app/google-services.json (기본값, fallback)
+
+    defaultConfig {
+        applicationId "com.lingorithm.kakikaki"
+        minSdkVersion flutter.minSdkVersion 
+        targetSdkVersion 35
+
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        // println("kakaoKey = $kakaoKey, 참고로 prod.env에서 7a385b837959eb321154f05dfae0362e를 가져야와야 함")
+        // Kakao 리디렉션 scheme 지정
+    }
+
+    buildToolsVersion "34.0.0"
+
+    signingConfigs {
+        release {
+            def keyProperties = new Properties()
+            keyProperties.load(new FileInputStream(rootProject.file('key.properties')))
+            keyAlias keyProperties['keyAlias']
+            keyPassword keyProperties['keyPassword']
+            storeFile file(keyProperties['storeFile'])
+            storePassword keyProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            // 테스트를 위해 일시적으로 비활성화
+            minifyEnabled false // 코드 축소 비활성화
+            shrinkResources false // 리소스 축소 비활성화
+            // optimize 대신 일반 proguard 파일 사용 (더 안전함)
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "env"
+    productFlavors {
+        dev {
+            dimension "env"
+            // applicationIdSuffix ".dev" // TODO: 파이어베이스에 앱 연결할 일 있으면 그때 추가
+            versionNameSuffix "-dev"
+            resValue "string", "app_name", "카키카키 (dev)"
+            resValue "string", "flavor", "dev"
+            def devKakaoKey = getKakaoKeyFromEnvFile("dev.env")
+            def devMapsKey = getValueFromEnvFile("dev.env", "GOOGLE_MAPS_API_KEY")
+            manifestPlaceholders = [
+                kakaoScheme: "kakao${devKakaoKey}",
+                kakaoNativeAppKey: devKakaoKey,
+                applicationName: "io.flutter.app.FlutterApplication"
+            ]
+        }
+        prod {
+            dimension "env"
+            resValue "string", "app_name", "카키카키"
+            resValue "string", "flavor", "prod"
+            def prodKakaoKey = getKakaoKeyFromEnvFile("prod.env")
+            def prodMapsKey = getValueFromEnvFile("prod.env", "GOOGLE_MAPS_API_KEY")
+            println "Building with prodKakaoKey: ${prodKakaoKey}"
+            manifestPlaceholders = [
+                kakaoScheme: "kakao${prodKakaoKey}",
+                kakaoNativeAppKey: prodKakaoKey,
+                applicationName: "io.flutter.app.FlutterApplication"
+            ]
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+    implementation "com.kakao.sdk:v2-user:2.15.0"
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
+}
+
+// Sentry 설정
+sentry {
+    // Sentry 프로젝트 정보 (환경변수 또는 sentry.properties에서 읽어옴)
+    // 빌드 실패 방지를 위해 업로드 기능 비활성화
+    uploadNativeSymbols = false // 네이티브 심볼 업로드
+    includeNativeSources = false // 네이티브 소스 포함
+    autoUploadProguardMapping = false // ProGuard 매핑 파일 자동 업로드
+    
+    // 추적 계측 활성화 (성능 모니터링)
+    tracingInstrumentation {
+        enabled = true
+        logcat {
+            enabled = true
+        }
+    }
+}
