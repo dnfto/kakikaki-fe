@@ -1,0 +1,71 @@
+buildscript {
+    ext.kotlin_version = '2.2.20'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Android Gradle Plugin
+        classpath "com.android.tools.build:gradle:8.9.1"
+
+        // Kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        
+        // Sentry Gradle Plugin (디버그 심볼 자동 업로드)
+        classpath 'io.sentry:sentry-android-gradle-plugin:4.12.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+        // Kakao SDK 저장소 (v2부터 필수)
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+    }
+}
+
+// 모든 하위 프로젝트에 JVM 타겟 설정
+subprojects {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = "17"
+            // Kotlin 2.x의 기본 언어 버전 사용
+            // 모든 Kotlin 경고를 무시
+            freeCompilerArgs += [
+                "-Xsuppress-version-warnings",
+                "-Xskip-prerelease-check"
+            ]
+        }
+    }
+    
+    // Java 컴파일 옵션도 통일
+    afterEvaluate {
+        if (project.hasProperty("android")) {
+            android {
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_17
+                    targetCompatibility JavaVersion.VERSION_17
+                }
+            }
+        }
+    }
+}
+
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+// Clean task
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
