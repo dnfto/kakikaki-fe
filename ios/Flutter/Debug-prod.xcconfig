@@ -1,0 +1,3 @@
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-prod.xcconfig"
+#include "Flutter/Generated.xcconfig"
+GOOGLE_URL_SCHEME=com.googleusercontent.apps.530525978904-5hr13v2hnhisvgf8ua5cqv4vafruq303
